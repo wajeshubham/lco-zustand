@@ -20,16 +20,16 @@ const CourseForm = () => {
   };
 
   return (
-    <div className="flex justify-center items-center gap-0 w-[100%]">
+    <div className="form-container">
       <input
-        className="p-2 outline-none border-[1px] border-gray-400 w-72"
+        className="form-input"
         value={courseTitle}
         onChange={(e) => {
           setCourseTitle(e.target.value);
         }}
       />
       <button
-        className="bg-gray-500 p-2 font-semibold text-white border-[1px] border-gray-500"
+        className="form-submit-btn"
         onClick={() => {
           handleCourseSubmit();
         }}
