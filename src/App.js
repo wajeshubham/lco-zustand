@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import CourseForm from "./components/CourseForm";
+import CourseList from "./components/CourseList";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="p-10 h-[100vh] w-[100vw] bg-gray-100 flex flex-col justify-start items-center">
+      <h1 className="text-4xl font-bold mb-10">My todo courses</h1>
+      <CourseForm />
+      <CourseList />
     </div>
   );
-}
+};
 
 export default App;
