@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import shallow from "zustand/shallow";
 import useCourseStore from "../app/courseStore";
 
 const CourseForm = () => {
   // By accessing addCourse via state.addCourse, this component will only be rendered if addCourse is called.
   // If any part of the state changes, this component will not be rerendered
-  const addCourse = useCourseStore((state) => state.addCourse, shallow);
+  const addCourse = useCourseStore((state) => state.addCourse);
 
   const [courseTitle, setCourseTitle] = useState("");
 

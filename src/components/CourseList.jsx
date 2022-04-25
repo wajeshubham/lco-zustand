@@ -1,5 +1,4 @@
 import React from "react";
-import shallow from "zustand/shallow";
 import useCourseStore from "../app/courseStore";
 
 const CourseList = () => {
@@ -8,8 +7,7 @@ const CourseList = () => {
       courses: state.courses,
       removeCourse: state.removeCourse,
       toggleCourseStatus: state.toggleCourseStatus,
-    }),
-    shallow
+    })
   );
 
   console.log("CourseList rendered");
