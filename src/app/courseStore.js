@@ -31,7 +31,7 @@ const useCourseStore = create(
   // devtools middleware allows you to see the state changes in the browser inside redux devtools
   devtools(
     // persist middleware allows you to persist the state in local storage
-    // (using is everywhere is not a good practice)
+    // (using it everywhere is not a good practice)
     persist(courseStore, {
       name: "courses", // name of the key in local storage
     })
